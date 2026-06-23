@@ -3,3 +3,5 @@ secrets/
 *.tfstate
 *.tfstate.backup
 .terraform.hcl.lock
+*.retry
+*.log

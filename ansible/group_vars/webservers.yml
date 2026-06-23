@@ -1,0 +1,4 @@
+http_port: 80
+nginx_user: www-data
+server_name: localhost
+document_root: /var/www/html

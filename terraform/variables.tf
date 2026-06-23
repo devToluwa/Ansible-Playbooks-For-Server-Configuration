@@ -13,5 +13,5 @@ variable "ami_id" {
 variable "key_name" {
   description = "Name of the existing AWS key pair"
   type        = string
-  default     = "ansible-prject-key-pair"
+  default     = "ansible-project-key-pair"
 }
