@@ -6,7 +6,7 @@
 - name: Install MySQL server
   apt:
     name: mysql-server
-    stateL: present
+    state: present
 
 - name: Install Python MySQL library
   apt:
@@ -20,15 +20,15 @@
     enabled: yes
 
 - name: Create application database
-  mysqldb:
+  community.mysql.mysql_db:
     name: "{{ db_name }}"
     state: present
     login_unix_socket: /var/run/mysqld/mysqld.sock
 
 - name: Create application nginx_user
-  mysql_user:
-    name: "{{ db_user }}"
-    db_password: "{{ db_password }}"
+  community.mysql.mysql_user:
+    name: "{{ dbuser }}"
+    password: "{{ db_password }}"
     priv: "{{ db_name }}.*:ALL"
     host: "%"
     state: present
