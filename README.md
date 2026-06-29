@@ -4,7 +4,7 @@ Ansible playbooks to configure and manage web servers and database servers acros
 
 ## What This Does
 
-Manual server configuration does not scale. When you have multiple servers to configure, doing it by hand means inconsistency, missed steps, and wasted time. This project automates the full configuration of two web servers and one database server using Ansible, so the same setup runs reliably across every host every time.
+Manually configuring servers does not scale. It becomes increasingly difficult to do when you have several servers to configure. If you configure the servers manually, there is the problem of inconsistency, oversight, and wasting time. In this project, I will automate the configuration of two web servers and one database server using Ansible.
 
 ## What Gets Created
 
@@ -37,8 +37,8 @@ ansible-server-configuration/
 
 Three EC2 instances provisioned with Terraform before running Ansible:
 
-- webserver-1 and webserver-2 — Ubuntu 22.04, t2.micro
-- dbserver — Ubuntu 22.04, t2.micro
+- webserver-1 and webserver-2: Ubuntu 22.04, t2.micro
+- dbserver: Ubuntu 22.04, t2.micro
 
 ## How to Use
 
